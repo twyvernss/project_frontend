@@ -1,0 +1,11 @@
+# Important notes goes here
+
+PROJECT STRUCTURE:
+Directories:
+/content - images, video and media files
+/js - javascript files
+/styles - css files
+
+Files:
+_main.css - Default styling and css for all the files
+animations.css - animation for files
