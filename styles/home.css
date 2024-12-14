@@ -1,0 +1,46 @@
+
+.nav-custom-button {
+    font-size: var(--fs-s);
+    width: 100px;
+    padding: 10px 29px;
+    border-radius: 40px;
+    background-color: rgb(63, 134, 255);
+    box-shadow: 0 10px 20px #00000037;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-custom-button:any-link {
+    color: #fff;
+}
+.header_wrapper {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.header_wrapper .navbar-brand .logo {
+    max-width: 50px;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+
+.header_wrapper .menu-navbar-nav {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_wrapper .nav-item {
+    margin: 0 1rem;
+}
+
+.header_wrapper .nav-item .nav-link {
+    font-weight: var(--fw-l);
+    font-size: var(--fs-s);
+    line-height: 1;
+}
+
+.navbar-toggler i {
+    height: 100%;
+}
