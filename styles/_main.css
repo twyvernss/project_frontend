@@ -36,3 +36,9 @@ html {
 
 /* Utility classes */
 .hidden { display: none; }
+
+
+/* Elements */
+body {
+    background-color: #2e294e;
+}

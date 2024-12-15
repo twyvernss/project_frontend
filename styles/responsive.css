@@ -1,39 +1,65 @@
 @media (max-width:1300px) {
-    .header_wrapper .menu-navbar-nav {
-        width: auto;
-    }
+    
 }
 
 @media (max-width:1230px) {
-    .header_wrapper .nav-item {
-        margin: 0 5px;
+    .header_wrapper {
+        padding: 10px 50px;
     }
 }
 
 @media (max-width:1070px) {
+    .logo img {
+        height: 45px;
+        width: auto;
+    }
 }
 
 @media (max-width:991px) {
-    .header_wrapper .navbar-brand img {
-        width: 45px;
-    }
-    .header_wrapper .navbar-toggler:focus {
-        box-shadow: none;
-    }
-    .header_wrapper .menu-navbar-nav {
-        text-align: center;
-    }
-    .header_wrapper .nav-item .nav-link {
-        margin-top: 15px;
-    }
-    .header_wrapper .nav-item:last-child .nav-link {
-        margin-bottom: 20px;
-    }
-    .header_wrapper .navbar-collapse {
-        background: #fff;
+    .header_wrapper {
+        padding: 10px 20px;
     }
 }
 
 @media (max-width:767px) {
-    
+    .header_wrapper {
+        padding: 10px 30px;
+    }
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    .menu-button {
+        display: inline-block;
+    }
+    .nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .link-wrapper {
+        display: none;
+    }
+    .link-wrapper.menu-open {
+        position: absolute;
+        top: 150px;
+        left: 80px;
+        right: 80px;
+        height: 300px;
+        background-color: #011638;
+        border-radius: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .support {
+        right: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .link-wrapper.menu-open {
+        left: 40px;
+        right: 40px;
+    }
 }
