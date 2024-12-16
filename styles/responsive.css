@@ -9,11 +9,11 @@
     
     /* hero section */
     .hero-top .hero-large-text {
-        font-size: 6rem;
+        font-size: 5rem;
         line-height: 1;
     }
     .hero-top .hero-small-text {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 0.7;
     }
     .hero-bottom-button {
@@ -27,7 +27,15 @@
         width: auto;
     }
 
-    
+    /* hero section */
+    .hero-section {
+        overflow: hidden;
+    }
+    .hero-bg {
+        right: inherit;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media (max-width:991px) {
@@ -36,11 +44,15 @@
     }
 
     /* hero section */
+    .hero-bg {
+        height: 700px;
+        width: auto;
+    }
     .hero-top .hero-large-text {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .hero-top .hero-small-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -85,12 +97,10 @@
         width: 80%;
     }
     .hero-top .hero-large-text {
-        font-size: 3.8rem;
         letter-spacing: -2px;
         line-height: 1.1;
     }
     .hero-top .hero-small-text {
-        font-size: 3.5rem;
         line-height: 0.75;
     }
     .hero-top .hero-sub-text {
@@ -98,7 +108,8 @@
     }
     .hero-top .hero-description {
         font-size: 10px;
-        width: 80%;
+        width: 100%;
+        padding: 1rem;
     }
     .hero-section .hero-bottom {
         flex-direction: column;
@@ -113,14 +124,14 @@
 
     /* hero section */
     .hero-top {
-        width: 100%;
+        width: 95%;
+        text-align: center;
     }
     .hero-top .hero-large-text {
         font-size: 3rem;
     }
-    .hero-top .hero-small-text {
-        font-size: 2.8rem;
-        width: 80%;
+    .hero-top .hero-description {
+        text-align: center;
     }
     .trustpoilt {
         width: 80%;

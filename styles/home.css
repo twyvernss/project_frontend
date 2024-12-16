@@ -59,17 +59,25 @@
 /* || hero section -------------------------- */
 
 .hero-section {
-    padding: 5rem 0;
+    height: 92vh;
+    padding: 5rem 0 2rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
+    position: relative;
 }
-
+.hero-bg {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    height: 97%;
+    width: auto;
+    z-index: -100;
+}
 .hero-top {
     width: 60%;
-    text-align: center;
+    text-align: left;
     padding: 1rem 0 0;
     display: flex;
     justify-content: center;
@@ -80,7 +88,7 @@
 .hero-top .hero-large-text {
     position: relative;
     text-transform: capitalize;
-    font-size: 7rem;
+    font-size: 6rem;
     color: #f4f4f4b2;
     line-height: 0.75;
     font-weight: var(--fw-xl);
@@ -107,22 +115,22 @@
     color: #fff;
     font-size: 18px;
     font-weight: var(--fw-l);
-    border-radius: 25px;
     line-height: 0;
-    padding: 5px 25px;
+    width: 100%;
     margin-top: 0;
 }
 .hero-top .hero-description {
     color: var(--secondary);
     font-weight: var(--fw-l);
     line-height: 0.9;
-    width: 60%;
-    text-align: center;
+    width: 100%;
+    padding: 0 20% 0 0;
+    text-align: left;
 }
 
 .hero-section .hero-bottom {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
