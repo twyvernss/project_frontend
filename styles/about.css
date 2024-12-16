@@ -85,18 +85,18 @@ ul {
 }
 
 .negative-points li::before {
-    content: "❌"; /* Add cross icon dynamically */
-    color: #ff4d4d; /* Match cross color */
+    content: "❌"; 
+    color: #ff4d4d; 
     font-size: 1.2rem;
 }
 
 .positive-points li {
-    color: #28a745; /* Green for positive points */
+    color: #28a745;
 }
 
 .positive-points li::before {
-    content: "✅"; /* Add checkmark icon dynamically */
-    color: #28a745; /* Match checkmark color */
+    content: "✅"; 
+    color: #28a745; 
     font-size: 1.2rem;
 }
 
