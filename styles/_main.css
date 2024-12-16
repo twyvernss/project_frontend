@@ -31,7 +31,10 @@ html {
     --fw-xl: 800;
 
     /* || color scheme */
-
+    --dark: #011638;
+    --main: #2E294E;
+    --primary: #9055A2;
+    --secondary: #D499B9;
 }
 
 /* Utility classes */
