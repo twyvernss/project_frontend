@@ -43,5 +43,5 @@ html {
 
 /* Elements */
 body {
-    background-color: #2e294e;
+    background-color: var(--main);
 }
