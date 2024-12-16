@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* About Section Container */
+.about-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Panel Styling */
+.left-panel,
+.right-panel {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.left-panel {
+    background-color: #0d1b43; /* Dark Blue Background */
+}
+
+.right-panel {
+    background-color: #ffffff; /* White Background */
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f0b90b; /* Yellow for "Pranjal Rastogi" */
+}
+
+.highlight-red {
+    color: #ff0000; /* Red for "CA Harshitha" */
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Lists Styling */
+ul {
+    list-style: none;
+}
+
+.negative-points,
+.positive-points {
+    padding: 0;
+    margin: 0;
+}
+
+.negative-points li,
+.positive-points li {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertically center align */
+    gap: 10px; /* Add space between icon and text */
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.5;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.negative-points li {
+    color: #ff4d4d; /* Red for negative points */
+}
+
+.negative-points li::before {
+    content: "❌"; /* Add cross icon dynamically */
+    color: #ff4d4d; /* Match cross color */
+    font-size: 1.2rem;
+}
+
+.positive-points li {
+    color: #28a745; /* Green for positive points */
+}
+
+.positive-points li::before {
+    content: "✅"; /* Add checkmark icon dynamically */
+    color: #28a745; /* Match checkmark color */
+    font-size: 1.2rem;
+}
+
+/* Center Divider Text */
+.choice-section {
+    text-align: center;
+    padding: 20px;
+    /* background-color: #f0b90b; */
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
