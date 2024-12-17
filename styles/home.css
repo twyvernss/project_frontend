@@ -151,3 +151,37 @@
     background-color: var(--dark);
     color: #fff;
 }
+
+/* section 2 */
+
+.section-2 {
+    margin-top: 0;
+    padding: 0;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.section-2-title {
+    text-transform: uppercase;
+    font-size: var(--fs-l);
+    font-weight: var(--fw-xl);
+    color: gold;
+}
+.section-2 .custom-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.section-2 .card-body {
+    padding: 2rem;
+    background-color: var(--dark);
+}
+.section-2 .card-body .card-title {
+    font-size: var(--fs-l);
+    font-weight: var(--fw-l);
+}
+
+.section-2 .card-body h6 {
+    color: var(--secondary);
+}

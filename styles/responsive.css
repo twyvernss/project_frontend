@@ -111,6 +111,9 @@
     }
 
     /* hero section */
+    .hero-section {
+        padding: 5rem 0 0;
+    }
     .hero-top {
         width: 80%;
     }
@@ -127,7 +130,18 @@
     .hero-top .hero-description {
         font-size: 10px;
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 0 0;
+    }
+
+    /* section-2 */
+    .section-2 {
+        padding: 1rem 0;
+    }
+    .section-2 .section-2-title {
+        font-size: var(--fs-m);
+    }
+    .section-2 .container {
+        padding: 0 1rem;
     }
 }
 
