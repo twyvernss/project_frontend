@@ -70,7 +70,7 @@
 .hero-bg {
     position: absolute;
     bottom: 0;
-    right: 20%;
+    right: 10%;
     height: 97%;
     width: auto;
     z-index: -100;
@@ -83,6 +83,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    left: -100px;
 }
 
 .hero-top .hero-large-text {
@@ -97,7 +99,6 @@
     text-shadow: 0 0 .4rem #ffffff;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #f6f6f6ef;
-
 }
 .hero-top .hero-small-text {
     font-size: 4rem;
