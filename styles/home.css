@@ -158,7 +158,7 @@
 .section-2 {
     margin-top: 0;
     padding: 0;
-    height: 70vh;
+    height: auto;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -185,4 +185,73 @@
 
 .section-2 .card-body h6 {
     color: var(--secondary);
+}
+
+
+/* reviews section */
+.reviews {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.reviews-header-title {
+    font-size: var(--fs-l);
+    font-weight: var(--fw-l);
+    color: gold;
+    text-transform: uppercase;
+}
+.reviews-header-description {
+    color: #fff;
+    font-size: var(--fs-m);
+    font-weight: var(--fw-l);
+    width: 60%;
+    text-align: center;
+}
+
+.reviews-bottom {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.review-card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--dark);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.review-card-pfp {
+    text-align: center;
+}
+.review-card-pfp img {
+    max-width: 120px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.review-card-pfp h4 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.user-review{
+    text-align: center;
+    font-size: var(--fs-s);
+    color: #fff;
 }
