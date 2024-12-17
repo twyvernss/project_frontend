@@ -55,6 +55,7 @@
         left: inherit;
         text-align: center;
         justify-content: center;
+        align-items: center;
     }
     .hero-top .hero-large-text {
         font-size: 4rem;
@@ -68,6 +69,7 @@
     .hero-top .hero-description {
         text-align: center;
         padding: 0;
+        width: 100%;
     }
     .hero-section .hero-bottom {
         flex-direction: column;
