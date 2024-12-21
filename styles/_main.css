@@ -25,16 +25,20 @@ html {
     --fs-xl: 4rem;
 
     /* || Font-weight */
-    --fw-s: 300;
-    --fw-m: normal;
+    --fw-xs: 300;
+    --fw-s: normal;
+    --fw-m: 500;
     --fw-l: 600;
     --fw-xl: 800;
 
     /* || color scheme */
-    --dark: #011638;
-    --main: #201c39;
-    --primary: #d414e2;
-    --secondary: #D499B9;
+    --main: #071546;
+    --primary: #ff505c;
+    --secondary: #181567;
+    --light: #0549c8;
+    --font: #e9c708;
+    --white: #fff;
+    --black: #000;
 }
 
 /* Utility classes */
@@ -44,4 +48,34 @@ html {
 /* Elements */
 body {
     background-color: var(--main);
+}
+p {
+    color: var(--white);
+}
+
+nav, .hero-container, .section-5, footer {
+    padding: 1rem 6rem;
+}
+
+
+/* Media Queries */
+@media (max-width:1230px) {
+    nav, .hero-container, .section5, footer {
+        padding: 1rem 4rem;
+    }
+}
+@media (max-width:1070px) {
+    nav, .hero-container, .section-5, footer {
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width:767px) {
+    nav, .hero-container, .section-5, footer {
+        padding: 1rem;
+    }
+}
+@media (max-width:450px) {
+    nav, .hero-container, footer {
+        padding: 1rem 10px;
+    }
 }

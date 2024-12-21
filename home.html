@@ -7,190 +7,187 @@
     <meta name="author" content="Smart Money club">
     <title>Smart Money Club</title>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- bootstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Icons -->
+    <link rel="icon" href="/content/logo-light.png">
+
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- css links -->
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" href="styles/_main.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- js links -->
-    <script src="/js/jquery-3.7.1.js"></script>
-    <script src="/js/main.js" defer></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style/_main.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/animations.css">
+
 </head>
 <body>
+    
+    <div class="support">
+        <p>Support</p>
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
 
-    <div class="header_wrapper">
+    <!-- Header + Hero -->
+    <div class="main">
 
-        <nav class="nav">
-            <a href="#" class="logo">
-                <img src="/content/logo-light.png" alt="">
-            </a>
-
-            <div class="link-wrapper" data-menu-mobile-screen>
-                <ul class="">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Membership</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Masterclass</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Login</a>
-                    </li>
+        <!-- navbar -->
+        <nav>
+            <div class="nav-logo">
+                <img src="/content/logo-light.png" alt="SmartMoneyClub-logo">
+                <p class="nav-text">SMART MONEY CLUB</p>
+            </div>
+            <div class="nav-links-section" data-links-wrapper>
+                <ul>
+                    <li><a href="">Membership</a></li>
+                    <li><a href="">Masterclass</a></li>
+                    <li><a href="">Login</a></li>
                 </ul>
             </div>
-
             <button class="menu-button" id="menu-button">
                 <i class="fa-solid fa-bars" data-menu-icon></i>
             </button>
         </nav>
 
-    </div>
+        <!-- hero -->
+        <div class="hero-container">
+            <div class="hero-text-wrapper">
+                
+                <div class="hero-text-top">
+                    <span class="glow">JOIN THE COMMUNITY</span>
+                    <p class="hero-title">
+                        <span class="gold">TOP 1%</span> MONEY MAKERS IN INDIA
+                    </p>
 
-    <!-- Hero section -->
-    
-    <div class="hero-section">
-        <img class="hero-bg" src="/content/bg-img.png" alt="">
-        <div class="hero-top">
-            <p class="hero-large-text">JOIN THE COMMUNITY</p>
-            <p class="hero-small-text"><i>TOP 1%</i> MONEY MAKERS IN INDIA</p>
-            <p class="hero-sub-text">Stock markets don't have to be STRESSFUL.</p>
-            <p class="hero-description">
-                Let's change the way your approach markets. Its not
-                just a trading course - its a mission to evolve  &
-                investors in India & start your stress-free &
-                peaceful journey in the stock market.
-            </p>
-            <div class="hero-bottom">
-                <button class="hero-bottom-button">Join now <i class="fa-solid fa-arrow-right"></i></button>
-                <div class="trustpoilt">
+                    <div class="hero-description">
+                        Let's change the way your approach markets. Its not just a trading course - its a mission to evolve  & investors in India & start your stress-free &  peaceful journey in the stock market. 
+                    </div>
                     
+                    <div class="hero-subtitle">
+                        Stock markets don't have to be STRESSFUL.
+                    </div>
+                </div>
+
+                <div class="hero-bottom">
+                    <button class="hero-bottom-button">
+                        Join&nbsp;now&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="trustPilot">
+                        
+                    </div>
                 </div>
             </div>
+
+            <img class="hero-bg-image" src="/content/bg-img.png" alt="">
         </div>
 
-        
+        <!-- Gradient -->
+        <div class="gradient"></div>
+
     </div>
 
 
-    <!-- section -->
-    <section class="py-5 section-2">
-        <div class="container">
-          <!-- Section Title -->
-          <div class="text-center mb-5">
-            <p class="section-2-title">smart money journey</p>
-          </div>
-          <!-- Cards Row -->
-          <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card custom-card h-100">
-                  <div class="card-body">
-                  <h5 class="card-title">STEP #1</h5>
-                  <h6 class="card-subtitle mb-2">Break & Rebuild</h6>
-                  <p class="card-text">Start your Smart Money Club journey by
-                    challanging all your false belives or eveything
-                    you've learnt while with you exprience </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="col-md-4">
-              <div class="card custom-card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">STEP #2</h5>
-                  <h6 class="card-subtitle mb-2">EXECUTE & TRADE</h6>
-                  <p class="card-text">Every Sunday, we have live
-                    inner circle calls where we
-                    break down the markets for
-                    the week and talk about
-                    stocks worth watching. It's
-                    practical, it's actionable,
-                    and it's all about making
-                    trading easier for you while
-                    connecting with the
-                    community. Community
-                    members also run
-                    screening sessions and
-                    market discussions on their
-                    own, which keeps the
-                    learning alive.  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-4">
-              <div class="card custom-card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">STEP #3</h5>
-                  <h6 class="card-subtitle mb-2">NETWORK & GROW</h6>
-                  <p class="card-text">You'll get lifetime access to
-                    our private Discord
-                    community where smart,
-                    passionate people share
-                    thoughts, opportunities,
-                    and ideas. Trading doesn't
-                    need to be lonely—this is
-                    where you'll grow and stay
-                    accountable with people
-                    who get you. </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Section #5 -->
+     <div class="section-5">
+        <div class="section-5-left">
+            <span class="section-5-title">Smart Money Club: More Than Just Another Stock Market Course</span>
+            <p>
+                Let me tell you this straight: SMC is not your typical stock market course. It's much bigger than that. It's a mission.
+                Our mission is simple—to create India's next wave of successful traders and investors. And we're doing this by building something extraordinary, something that actually works.
+                Here's the truth: More than 90% of stock market courses in India are purely transactional. You buy it, they hand you a bunch of videos, and that's the end of it. Nobody's there for you when you hit your first roadblock. Nobody helps you figure things out when the market throws something unexpected your way.
+            </p>
         </div>
-      </section>
-    
-    <div class="reviews">
+        <div class="section-5-right"></div>
+     </div>
 
-      <div class="reviews-header">
-        <p class="reviews-header-title">our members</p>
-        <p class="reviews-header-description">Read what our community members have to say about their success stories with us</p>
-      </div>     
 
-      <div class="reviews-bottom">
-        <div class="review-card">
-          <div class="review-card-pfp">
-            <img class="user-icon" src="/content/pfp-1.png" alt="">
-            <h4>User&nbsp;Name</h4>
-          </div>
-          
-          <p class="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus dolorem totam sint nulla vel soluta id error ut blanditiis eos aperiam vero, excepturi esse fuga laboriosam exercitationem aliquam eligendi!
-          </p>
+    <!-- Section #3 -->
+    <div class="section-3">
+        <div class="section-3-box">
+            <p class="box-title"><i class="fa-solid fa-calendar-week"></i> <span>Weekly Inner Circle Calls</span></p>
+            <p class="box-paragraph">We're not here to sell you information. We're here to walk with you through every step of your trading journey.Every week, we meet as a community to discuss market opportunities and strategies for the upcoming week. These calls aren't just about learning—they're about engaging, sharing ideas, and growing together.</p>
         </div>
-        <div class="review-card">
-          <div class="review-card-pfp">
-            <img class="user-icon" src="/content/pfp-2.png" alt="">
-            <h4>User Name</h4>
-          </div>
-          
-          <p class="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus dolorem totam sint nulla vel soluta id error ut blanditiis eos aperiam vero, excepturi esse fuga laboriosam exercitationem aliquam eligendi!
-          </p>
+        <div class="section-3-box">
+            <p class="box-title"><i class="fa-solid fa-magnifying-glass"></i> Complete Transparency</p>
+            <p class="box-paragraph">Unlike most communities, we encourage open communication. Our members can freely connect and talk to each other. We're completely transparent with everything we do—and that's reflected in our reputation, with no negative reviews on TrustPilot.</p>
         </div>
-        <div class="review-card">
-          <div class="review-card-pfp">
-            <img class="user-icon" src="/content/pfp-3.png" alt="">
-            <h4>User Name</h4>
-          </div>
-          
-          <p class="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus dolorem totam sint nulla vel soluta id error ut blanditiis eos aperiam vero, excepturi esse fuga laboriosam exercitationem aliquam eligendi!
-          </p>
+        <div class="section-3-box">
+            <p class="box-title"><i class="fa-solid fa-gear"></i> Tools to Save You Time</p>
+            <p class="box-paragraph">We've built systematic tools for every part of the process. Whether it's back-testing, trade execution, or strategy building, we have tools in place that can save you over 100+ hours a year if you're a serious trader. Everything we teach is supported by practical resources.</p>
         </div>
-
-      </div>
-
     </div>
 
-    <div class="support">
-        <i class="fa-solid fa-handshake-angle"></i>
-        Support
+    <!-- Section #2 -->
+    <div class="section-2">
+        <h1>STOP BUYING AFTER BREAKOUT</h1>
+        <div class="section-2-img-container">
+            <img src="/content/section-2-img1.png" alt="">
+            <img src="/content/section-2-img2.png" alt="">
+        </div>
     </div>
+
+    <!-- Section #4 -->
+    <div class="section-4">
+        <ul class="list-1">
+            <li><i class="fa-solid fa-circle-xmark"></i> Lonely Trading </li>
+            <li><i class="fa-solid fa-circle-xmark"></i> Random Guesswork </li>
+            <li><i class="fa-solid fa-circle-xmark"></i> Stress and Tension </li>
+            <li><i class="fa-solid fa-circle-xmark"></i> Emotional Decisions </li>
+            <li><i class="fa-solid fa-circle-xmark"></i> Intra-Day and F&O </li>
+            <li><i class="fa-solid fa-circle-xmark"></i> Quick Rich Schemes </li>
+        </ul>
+        <ul class="list-2">
+            <li><i class="fa-solid fa-circle-check"></i> Supportive Community</li>
+            <li><i class="fa-solid fa-circle-check"></i> Proven Strategies</li>
+            <li><i class="fa-solid fa-circle-check"></i> Freedom Lifestyle</li>
+            <li><i class="fa-solid fa-circle-check"></i> Rule-Based System</li>
+            <li><i class="fa-solid fa-circle-check"></i> Swing & Positional</li>
+            <li><i class="fa-solid fa-circle-check"></i> Get Rich slowly but surely</li>
+        </ul>
+     </div>
+    <!-- About section -->
+    <div class="about">
+        <p class="about-title">About us</p>
+        <div class="about-top">
+            <div class="about-text">
+                <h1>Hi, I am <span class="highlight">Pranjal&nbsp;Rastogi</span></h1>
+                <p>
+                    I am NISM certified, full-time trader, dynamic entrepreneur and driving force behind Smart Money Club.
+                    I specialize in institutional behavioral analysis, catching stocks every time before they breakout.
+                    With a Finance degree from Narsee Monte.
+                </p>
+            </div>
+            <div class="about-img1"></div>
+        </div>
+
+        <div class="about-bottom">
+            <div class="about-img2"></div>
+            <div class="about-text">
+                <h1>Hello, I am <span class="highlight">CA&nbsp;Harshitha</span></h1>
+                <p>
+                    I am 2-times rank holder Chartered Accountant with a passion to capitalise on India's giant growth story.
+                    I honed a knack for excellence & specialize in identifying high-growth companies helping many clients manage
+                    & grow their wealth peacefully.
+                </p>
+            </div>
+        </div>
+        <div class="about-bg about-bg1"></div>
+        <div class="about-bg about-bg2"></div>
+    </div>
+
+    <footer>
+        <div style="background-color: beige; width: 100%; height: 100%;">Footer padding</div>
+    </footer>
+
+    <!-- Bootstrap -->
+     
+    <!-- js links -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/jquery-3.7.1.js"></script>
+    <script src="/js/jquery_code.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
