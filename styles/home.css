@@ -118,7 +118,7 @@ nav {
 
 /* HERO TEXT TOP-PORTION */
 .hero-text-top {
-    margin: 4rem 0 1rem;
+    margin: 2.8rem 0 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -133,6 +133,7 @@ nav {
 
 /* HERO SECTION TEXTS */
 .glow {
+    margin: 0 0 0.8rem;
     font-size: 6rem;
     font-weight: var(--fw-xl);
     color: #eeeeeeb5;
@@ -160,7 +161,7 @@ nav {
 }
 .hero-container .hero-subtitle {
     width: fit-content;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin: 1rem 0;
     padding: 0.5rem 1rem;
@@ -175,6 +176,7 @@ nav {
     border-radius: 20px;
 }
 .hero-description {
+    margin: 0.9rem 0 0;
     font-weight: var(--fw-m);
 }
 
@@ -185,7 +187,7 @@ nav {
 }
 
 .hero-bottom-button {
-    height: 60px;
+    height: 55px;
     font-weight: var(--fw-l);
     padding: 0.5rem 1.5rem;
     color: #fff;
