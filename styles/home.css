@@ -36,6 +36,8 @@
 .support p {margin: 0;}
 .support i {font-size: 1.1rem;}
 
+.support:hover {transform: scale(1.1); box-shadow: 0 0 0.8rem #25d366;}
+
 /* || nav   -------------------------------------------- */
 nav {
     height: 10%;
@@ -319,6 +321,10 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    
+    animation: containers linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 .section-2-img-container > img {
     height: auto;
@@ -360,80 +366,155 @@ nav {
 .section-4 .list-2 {color: #00d400;}
 
 /* || About section ------------------------------------------------- */
+
 .about {
-    height: auto;
+    margin: 3rem 0;
+
     display: flex;
-    padding: 6rem 8rem;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    align-content: center;
+    gap: 80px;
+    
     position: relative;
 }
-
-.about-title {
-    font-size: var(--fs-l);
-    font-weight: var(--fw-m);
+.about h1 {
+    color: var(--white);
+    margin: 2rem 0;  
+    text-align: center;
 }
 
-.about-top, .about-bottom {
-    width: 90%;
+.about-wrapper {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+
     display: flex;
     align-items: center;
-    gap: 80px;
     justify-content: center;
+    gap: 50px;
 }
-
-.about-text {
-    text-align: justify;
+.about-wrapper div * {
+    margin: 0;
+    padding: 0;
+}
+.about-left, .about-right {
+    width: 20%;
+    
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
+    gap: 20px;
+    z-index: 0;
 }
-.about-text h1 {
-    color: #fff;
+
+.about-left {
+    text-align: right;
+
+    align-items: flex-end;
+
+    animation: about-left linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+
 }
-.about-text p {
-    font-weight: var(--fs-l);
-    width: 80%;
+.about-left i {
+    padding: 0 0 0 0.5rem;
+    color: gold;
 }
-.highlight {
+.about-title {
+    font-size: 52px;
+    font-weight: var(--fw-l);
+    line-height: 1.2;
+}
+.about-subtitles {
     color: var(--primary);
+    font-size: 16px;
+    font-weight: var(--fw-l);
+    list-style-type: none;
 }
-.about-img1, .about-img2 {
-    height: 300px;
-    width: 250px;
-    overflow: hidden;
+.about-subtitles li {
+    padding: 5px 10px;
+}
+
+.about-right {
+    animation: about-right linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+.about-right .about-degree {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(125, 125, 125, 0.684);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 20px;
+    transition: 200ms;
+}
+.about-degree:hover {
+    box-shadow: 0 4px 2rem 0 rgba(173, 173, 173, 0.896);
+}
+
+.about-mid {
+    height: 400px;
+    width: 300px;
+
+    background-position: center;
+    background-size: cover;
+
     border-radius: 20px;
     box-shadow: 0 0 1rem #000;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 1;
+}
+.about-img1 {
+    background-image: url(/content/about-bg1.png);
+}
+.about-img2 {
+    background-image: url(/content/about-bg2.png);
 }
 
-.about-img1 { background-image: url('/content/about-bg1.png'); }
-.about-img2 { background-image: url('/content/about-bg2.png'); }
+.about-second .about-left {
+    text-align: left;
+    align-items: flex-start;
+    
+    animation: about-right linear;
+    order: 3;
+}
+.about-second .about-mid {order: 2;}
+.about-second .about-right {
+    text-align: right;
+    align-items: flex-end;
+    order: 1;
+    animation: about-left linear;
+}
+
+.about-second .about-left,.about-second .about-right {
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+.about .bg-gradient {
+    height: 350px;
+    width: 350px;
 
 
-.about-bg {
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    filter: blur(100px);
+    filter: blur(120px);
+    border-radius: 50%;
+
     z-index: -1;
+    position: absolute;
 }
-.about-bg1 {
-    background-color: #fe219e;
+.grad-1 {
+    right: 400px;
     top: 200px;
-    right: 100px;
+    background-color: rgb(169, 40, 255);
 }
-.about-bg2 {
-    background-color: #7726db;
-    bottom: 200px;
-    left: 100px;
+.grad-2 {
+    left: 400px;
+    bottom: 80px;
+    background-color: rgb(255, 39, 183);
 }
 
 /* || footer section ---------------------------------------------- */

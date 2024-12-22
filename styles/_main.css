@@ -60,22 +60,22 @@ nav, .hero-container, .section-5, footer {
 
 /* Media Queries */
 @media (max-width:1230px) {
-    nav, .hero-container, .section5, footer {
+    nav, .hero-container, .section5, .about, footer {
         padding: 1rem 4rem;
     }
 }
 @media (max-width:1070px) {
-    nav, .hero-container, .section-5, footer {
+    nav, .hero-container, .section-5, .about, footer {
         padding: 1rem 2rem;
     }
 }
 @media (max-width:767px) {
-    nav, .hero-container, .section-5, footer {
+    nav, .hero-container, .section-5, .about,footer {
         padding: 1rem;
     }
 }
 @media (max-width:450px) {
-    nav, .hero-container, footer {
+    nav, .hero-container, .about, footer {
         padding: 1rem 10px;
     }
 }

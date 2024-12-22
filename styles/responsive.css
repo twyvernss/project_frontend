@@ -60,16 +60,6 @@
         display: none;
     }
 
-    /* about ------------------------------- */
-    .about { padding: 6rem 1rem; overflow: hidden; }
-    
-    .about-bg1 {
-        top: 250px;
-        right: -50px;
-    }
-    .about-bg2 {
-        left: -50px;
-    }
 }
 
 @media (max-width:991px) {
@@ -130,8 +120,20 @@
         gap: 40px;
     }
 
-    /* about */
-    .about-top { gap: 50px; }
+    /* about ----------------------------- */
+    .about-wrapper {
+        gap: 20px;
+    }
+    .about-left, .about-right {
+        width: 25%;
+    }
+    .about-title {
+        font-size: 45px;
+    }
+    .about-mid {
+        height: 370px;
+        width: 280px;
+    }
 }
 
 @media (max-width:767px) {
@@ -235,24 +237,70 @@
     .section-4 .list-1 i {order: 0;}
 
     /* about section ----------------------- */
-    .about-top, .about-bottom {
-        padding: rem;
-        display: flex;
+    .about {
+        margin-top: 2rem;
+        gap: 40px;
+    }
+
+    .about-wrapper {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+    }
+    .about h1 {
+        margin: 2rem 0;
+    }
+    .about-left, .about-right {
+        width: 80%;
+        text-align: center;
+
         gap: 10px;
-        width: 100%;
     }
-    .about-text {
-        width: 100%;
+    .about-left {
+        align-items: center;
     }
-    .about-img {
-        height: 350px;
-        width: 300px;
+    .about-subtitles {
+        text-align: center;
+        font-size: 18px;
     }
-    .about-top .about-img1 {
-        order: -1;
+    .about-subtitles li {
+        padding: 0;
+    }
+    .about-title {
+        font-size: 40px;
+    }
+    .about-mid {
+        width: 330px;
+    }
+    .about-right {
+        align-items: center;
+        width: 80%;
+        font-size: 14px;
+    }
+    .about-right .about-degree {
+        padding: 0.5rem 2rem;
+    }
+    .about-second .about-left {
+        text-align: center;
+        order: 1;
+    }
+    .about-second .about-mid {order: 2;}
+    .about-second .about-right {
+        order: 3;
+        text-align: center;
+    }
+    .about-second .about-left, .about-second .about-right {align-items: center;}
+    .about .bg-gradient {
+        height: 500px;
+        width: 280px;
+        filter: blur(140px);
+    }
+    .grad-1 {
+        right: 0;
+        top: 200px;
+    }
+    .grad-2 {
+        left: 0;
+        bottom: 150px;
     }
 }
 
@@ -307,8 +355,11 @@
     }
     
     /* about ------------------------- */
-    .about-img {
-        height: 300px;
-        width: 250px;
+    .about h1 {
+        margin: 2rem 0 0;
+    }
+    .about-mid {
+        height: 280px;
+        width: 90%;
     }
 }
