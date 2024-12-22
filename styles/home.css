@@ -97,7 +97,6 @@ nav {
 
 /* || hero section ------------------------------------ */
 .hero-container {
-    border: 1px solid gold;
     color: var(--white);
     text-transform: uppercase;
     height: 89.5%;
