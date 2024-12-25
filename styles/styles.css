@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Main Content Styling */
+.content {
+    width: 60%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content h1 span {
+    color: #888;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.press-release {
+    width: 35%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.press-release img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.press-release h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.press-release p {
+    font-size: 1rem;
+    line-height: 1.6;
+}

@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #10162f;
+    color: #fff;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.journey {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.heading {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-bottom: 40px;
+}
+
+/* Steps Container */
+.steps-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Step */
+.step {
+    background-color: #17203b;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.step h2 {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 20px;
+    color: #ff66cc;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.step p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        max-width: 90%;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .step {
+        padding: 15px;
+    }
+
+    .step h3 {
+        font-size: 18px;
+    }
+
+    .step p {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+}
