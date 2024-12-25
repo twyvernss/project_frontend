@@ -378,9 +378,27 @@ nav {
     
     position: relative;
 }
+.about-description-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-description-section p {
+    width: 80%;
+    text-align: center;
+    font-weight: var(--fw-m);
+}
+
+.desc-title {
+    font-size: var(--fs-m);
+}
+
 .about h1 {
     color: var(--white);
-    margin: 2rem 0;  
+    margin: 2rem 0 0;  
     text-align: center;
 }
 
@@ -459,7 +477,7 @@ nav {
 
 .about-mid {
     height: 400px;
-    width: 300px;
+    width: 400px;
 
     background-position: center;
     background-size: cover;

@@ -91,7 +91,7 @@
     }
 
     /* section #5 -------------------------- */
-    .section-5 {padding: 0 2rem;}
+    .section-5 {padding: 0 2rem; margin: 0 0 1rem;}
     .section-5-title {font-size: var(--fs-m);}
     .section-5-left p {margin: 0; padding: 0.7rem;}
 
@@ -121,6 +121,16 @@
     }
 
     /* about ----------------------------- */
+    .about {
+        gap: 30px;
+    }
+    .about-description-section .desc-title {
+        font-size: var(--fs-m);
+    }
+    .about-description-section p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
     .about-wrapper {
         gap: 20px;
     }
