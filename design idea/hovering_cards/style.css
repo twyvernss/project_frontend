@@ -1,0 +1,62 @@
+.service {
+    background: hsl(192, 24%, 96%);
+    padding-block: 100px;
+}
+  
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    position: relative;
+    background: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 40px 30px;
+    box-shadow: 0 16px 32px hsla(188, 63%, 7%, 0.1);
+}
+
+.service-card .card-icon {
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+.service-card .card-title { margin-bottom: 15px; }
+
+.service-card .card-title > a:is(:hover, :focus) { color: hsl(9, 100%, 62%); }
+
+.service-card .card-text {
+    color: hsl(200, 15%, 43%);
+    font-size: 0.875rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.service-card .card-link {
+    color: hsl(180, 20%, 62%);
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-card:is(:hover, :focus) .card-link { color: hsl(9, 100%, 62%); }
+
+.service-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: hsl(9, 100%, 62%);
+    transition: 0.25s ease;
+}
+
+.service-card:is(:hover, :focus)::after { width: 100%; }
+
