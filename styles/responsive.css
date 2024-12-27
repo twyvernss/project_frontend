@@ -22,6 +22,19 @@
         font-size: 3rem;
     }
 
+    /* section #5 ------------------------ */
+    .section-5 {
+        flex-direction: column;
+    }
+    .section-5-left {
+        width: 100%;
+    }
+    .section-5-title, .section-5-left p {
+        text-align: center;
+    }
+    .section-5-right video {
+        max-height: 300px;
+    }
 
     /* section #2 ------------------------ */
     .section-2-img-container {
@@ -49,14 +62,6 @@
     /* hero section ----------------------- */
     .hero-container .hero-bg-image {
         width: 500px;
-    }
-
-    /* section #5------------------------- */
-    .section-5 {
-        flex-direction: column;
-    }
-    .section-5-left {
-        width: 100%;
     }
 
     /* save 10 section ---------------------- */
@@ -108,7 +113,10 @@
     /* section #5 -------------------------- */
     .section-5 {padding: 0 2rem; margin: 0 0 1rem;}
     .section-5-title {font-size: var(--fs-m);}
-    .section-5-left p {margin: 0; padding: 0rem;}
+    .section-5-left p {margin: 1rem 0; padding: 0rem;}
+    .section-5-right video {
+        max-width: 600px;
+    }
 
     /* section #2 -------------------------- */
     .section-2-img-container {
@@ -241,6 +249,11 @@
 
     .hero-bottom {
         flex-direction: column;
+    }
+
+    /* section #5 -------------------------- */
+    .section-5-right video {
+        width: 400px;
     }
 
     /* section #2 ------------------------ */
@@ -426,9 +439,6 @@
     .hero-container .hero-text-wrapper {
         padding: 2rem 0;
     }
-    .hero-text-top {
-        /* margin-top: 2rem; */
-    }
     .glow {
         font-size: 3rem
     }
@@ -441,7 +451,10 @@
     .trustpoilt {
         width: 80%;
     }
-
+    /* section #5 -------------------------- */
+    .section-5-right video {
+        width: 300px;
+    }
     /* section #3 -------------------- */
     .section-3-box .box-title i {
         margin: 0 0.5rem;
