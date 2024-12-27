@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    /* Wrapper to center and constrain scrollbar */
+    .scroll-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .scroll-section {
+      width: 90%;
+      max-width: 1200px;
+      overflow-x: scroll;
+      padding: 20px 0;
+      margin-bottom: 10px;
+    }
+
+    .container-wrapper {
+      display: flex;
+      gap: 20px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+    }
+
+    .scroll-container {
+      min-width: 300px;
+      height: 200px;
+      background: #3498db;
+      border-radius: 8px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Modern scrollbar styling */
+    .scroll-section::-webkit-scrollbar {
+      height: 8px;
+      display: block;
+    }
+
+    .scroll-section::-webkit-scrollbar-track {
+      background: #e0e0e0;
+      border-radius: 20px;
+      margin: 0 150px; /* This creates the shorter scrollbar effect */
+    }
+
+    .scroll-section::-webkit-scrollbar-thumb {
+      background: linear-gradient(45deg, #3498db, #2980b9);
+      border-radius: 20px;
+      border: 2px solid #e0e0e0;
+    }
+
+    .scroll-section::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(45deg, #2980b9, #2471a3);
+    }
+
+    /* Firefox scrollbar styling */
+    .scroll-section {
+      scrollbar-width: thin;
+      scrollbar-color: #3498db #e0e0e0;
+    }
+
+    /* Optional progress indicator */
+    .scroll-progress {
+      width: 60%;
+      height: 2px;
+      background: #e0e0e0;
+      border-radius: 4px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .progress-bar {
+      position: absolute;
+      height: 100%;
+      background: linear-gradient(45deg, #3498db, #2980b9);
+      border-radius: 4px;
+      width: 0%;
+      transition: width 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-wrapper">
+    <section class="scroll-section" id="scrollSection">
+      <div class="container-wrapper">
+        <div class="scroll-container">Container 1</div>
+        <div class="scroll-container">Container 2</div>
+        <div class="scroll-container">Container 3</div>
+        <div class="scroll-container">Container 4</div>
+        <div class="scroll-container">Container 5</div>
+        <div class="scroll-container">Container 6</div>
+      </div>
+    </section>
+    <div class="scroll-progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <script>
+    // Add scroll progress indicator
+    const scrollSection = document.getElementById('scrollSection');
+    const progressBar = document.getElementById('progressBar');
+
+    scrollSection.addEventListener('scroll', () => {
+      const scrollWidth = scrollSection.scrollWidth - scrollSection.clientWidth;
+      const scrolled = (scrollSection.scrollLeft / scrollWidth) * 100;
+      progressBar.style.width = scrolled + '%';
+    });
+  </script>
+</body>
+</html>
