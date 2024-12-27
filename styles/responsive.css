@@ -52,12 +52,11 @@
     }
 
     /* section #5------------------------- */
+    .section-5 {
+        flex-direction: column;
+    }
     .section-5-left {
         width: 100%;
-        text-align: center;
-    }
-    .section-5-right {
-        display: none;
     }
 
     /* save 10 section ---------------------- */
@@ -85,14 +84,18 @@
     .hero-container .hero-bg-image {
         display: none;
     }
+    .hero-container .hero-text-wrapper {
+        padding: 4rem 0;
+    }
     .hero-text-top {
         align-items: center;
+        margin-bottom: 1rem;
     }
     .glow {
         font-size: 6rem;
     }
     .hero-container .hero-title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .hero-container .hero-description {
         width: 80%;
@@ -105,7 +108,7 @@
     /* section #5 -------------------------- */
     .section-5 {padding: 0 2rem; margin: 0 0 1rem;}
     .section-5-title {font-size: var(--fs-m);}
-    .section-5-left p {margin: 0; padding: 0.7rem;}
+    .section-5-left p {margin: 0; padding: 0rem;}
 
     /* section #2 -------------------------- */
     .section-2-img-container {
@@ -227,7 +230,7 @@
         font-size: 4rem;
     }
     .hero-container .hero-title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .hero-subtitle {
         font-size: 0.7rem;
@@ -420,8 +423,11 @@
     }
 
     /* hero section ------------------- */
+    .hero-container .hero-text-wrapper {
+        padding: 2rem 0;
+    }
     .hero-text-top {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
     .glow {
         font-size: 3rem
