@@ -112,7 +112,7 @@
 
     /* section #5 -------------------------- */
     .section-5 {padding: 0 2rem; margin: 0 0 1rem;}
-    .section-5-title {font-size: var(--fs-m);}
+    .section-5-title {font-size: 2rem;}
     .section-5-left p {margin: 1rem 0; padding: 0rem;}
     .section-5-right video {
         max-width: 600px;
@@ -147,7 +147,7 @@
     .about {
         gap: 30px;
     }
-    .about-description-section .desc-title {
+    .about-description-section {
         font-size: var(--fs-m);
     }
     .about-description-section p {
@@ -166,6 +166,9 @@
     .about-mid {
         height: 370px;
         width: 280px;
+    }
+    .about .desc-title {
+        font-size: var(--fs-l);
     }
 
     /* Membership ------------------------ */
@@ -225,7 +228,7 @@
         gap: 50px;
     }
     .nav-links-section ul li a:any-link {
-        color: var(--dark);
+        color: var(--font);
         font-weight: var(--fw-l);
         font-size: 1.2rem;
     }
@@ -362,6 +365,10 @@
     .footer-section ul {
         text-align: center;
     }
+    .footer-links {
+        justify-content: center;
+    }
+    
 
     /* Journey section --------------------------- */
     .steps-container {
@@ -419,7 +426,7 @@
     /* nav ---------------------- */
     /* nav links */
     .nav-links-section.open-menu {
-        height: 400px;
+        height: 250px;
         top: 100px;
         left: 40px;
         right: 40px;
@@ -437,7 +444,7 @@
 
     /* hero section ------------------- */
     .hero-container .hero-text-wrapper {
-        padding: 2rem 0;
+        padding: 3.5rem 0;
     }
     .glow {
         font-size: 3rem

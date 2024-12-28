@@ -32,14 +32,16 @@ html {
     --fw-xl: 800;
 
     /* || color scheme */
-    --main: #071546;
-    --primary: #ff505c;
-    --secondary: #181567;
-    --light: #0549c8;
-    --font: #e9c708;
+    --main: #121830;
+    --primary: #ff525e;
+    --secondary: #142055;
+    --outline: #143677;
+    --font: #f2d073;
     
     --white: #fff;
     --black: #000;
+
+    --grad: linear-gradient(150deg, #182046 35%, #182459);
 }
 
 /* Utility classes */
