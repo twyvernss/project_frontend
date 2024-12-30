@@ -7,3 +7,185 @@ nav a:any-link {
 
 
 /* main content */
+.masterclass-wrapper {
+    min-height: 650px;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.masterclass-container {
+    min-height: 600px;
+    min-width: 700px;
+    padding: 1rem;
+    flex-grow: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.enquiry-link { 
+    display: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: var(--fw-m);
+}
+.section-title { 
+    font-size: 1.5rem;
+    font-weight: var(--fw-l);
+ }
+.classes-container {
+    width: 85%;
+    max-height: 500px;
+    flex-grow: 2;
+    overflow-y: scroll;
+}
+.scroll-section {
+    height: auto;
+    padding: 2rem;
+
+    display: grid;
+    justify-content: flex-start;
+    align-items: baseline;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.classes-container::-webkit-scrollbar {
+    height: 5px;
+    scrollbar-width: thin;
+    scroll-margin-block-start: 100px;
+    display: block;
+}
+
+.classes-container::-webkit-scrollbar-track {
+    background: var(--grad);
+    border-radius: 20px;
+    margin: 0 150px;
+}
+
+.classes-container::-webkit-scrollbar-thumb {
+    background: var(--outline);
+    border-radius: 20px;
+}
+
+.classes-container::-webkit-scrollbar-thumb:hover {
+    background: #19418d;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.class-card {
+    height: 250px;
+    width: auto;
+    max-width: 290px;
+    padding: 1rem;
+    background: var(--grad);
+    border: 2px solid var(--outline);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+}
+.class-card:hover {
+    transform: scale(1.02);
+}
+.class-card:active {
+    transform: scale(0.90) rotateZ(1.7deg);
+}
+.class-title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.class-title-section i {
+    color: var(--font);
+}
+.class-title {
+    font-size: 20px;
+    font-weight: var(--fw-l);
+    margin: 5px 0;
+}
+.class-venue {
+    font-size: 14px;
+    font-weight: var(--fw-m);
+}
+.class-date {
+    font-size: 11px;
+}
+.class-time {
+    font-size: 10px;
+    color: var(--font);
+}
+.class-info {
+    font-size: 10px;
+}
+.class-card a:any-link {color: #fff; text-decoration: none;}
+.class-card a button {
+    width: 150px;
+    padding: 0.5rem;
+    font-size: 14px;
+    font-weight: var(--fw-l);
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+.form-container {
+    min-height: 600px;
+    min-width: 400px;
+    flex-grow: 1;
+}
+
+@media (width < 991px) {
+    .masterclass-wrapper {
+        padding: 1rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .masterclass-container {
+        width: 100%;
+        min-width: 300px;
+        padding: 0;
+    }
+    .classes-container {
+        width: 100%;
+    }
+    .form-container {
+        min-width: 300px;
+        width: 100%;
+    }
+}
+
+@media (width < 776px) {
+    .masterclass-container {height: auto;}
+    .enquiry-link {display: inline-block;}
+    .classes-container {
+        min-height: auto;
+        max-height: fit-content;
+        overflow-y: initial;
+    }
+    .scroll-section {
+        padding: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .class-card {
+        max-width: 420px;
+    }
+}
