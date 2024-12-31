@@ -41,19 +41,18 @@ nav a:any-link {
  }
 .classes-container {
     width: 85%;
-    max-height: 500px;
+    max-height: 550px;
     flex-grow: 2;
-    overflow-y: scroll;
 }
 .scroll-section {
-    height: auto;
+    height: fit-content;
     padding: 2rem;
 
     display: grid;
     justify-content: flex-start;
     align-items: baseline;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 40px;
 }
 
 .classes-container::-webkit-scrollbar {
@@ -83,9 +82,9 @@ nav a:any-link {
     justify-content: center;
 }
 .class-card {
-    height: 250px;
+    height: 220px;
     width: auto;
-    max-width: 290px;
+    max-width: 350px;
     padding: 1rem;
     background: var(--grad);
     border: 2px solid var(--outline);
@@ -138,7 +137,7 @@ nav a:any-link {
     padding: 0.5rem;
     font-size: 14px;
     font-weight: var(--fw-l);
-    background-color: var(--primary);
+    background: var(--primary);
     color: var(--white);
     border: none;
     border-radius: 8px;
