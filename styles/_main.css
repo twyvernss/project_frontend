@@ -56,7 +56,7 @@ p {
     color: var(--white);
 }
 
-nav, .hero-container, .section-5, footer {
+nav, .hero-container, .section-5, .why, footer {
     padding: 1rem 6rem;
 }
 
